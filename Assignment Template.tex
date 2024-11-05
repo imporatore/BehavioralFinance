@@ -1,0 +1,58 @@
+%
+% Assignment Template
+% Last modified 9/11/2024 by Ziyong Wang
+
+\documentclass[11pt]{article}
+\usepackage[left=0.7in,right=0.7in,top=1in,bottom=0.7in]{geometry}
+\usepackage{fancyhdr} % for header
+\usepackage{graphicx} % for figures
+\usepackage{amsmath}  % for extended math markup
+\usepackage{amssymb}
+\usepackage{inconsolata}
+\usepackage[bookmarks=false]{hyperref} % for URL embedding
+\usepackage[noend]{algpseudocode} % for pseudocode
+\usepackage[plain]{algorithm} % float environment for algorithms
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Date}{Nov 2}
+\newcommand{\GroupNumber}{27}
+\newcommand{\ProjectNumber}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% create header and footer for every page
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{\Date}}
+\chead{\textbf{Group \GroupNumber}}
+\rhead{\textbf{Empirical Project \ProjectNumber}}
+\cfoot{\thepage}
+
+% preferred pseudocode style
+\algrenewcommand{\algorithmicprocedure}{}
+\algrenewcommand{\algorithmicthen}{}
+
+% ``do { ... } while (cond)''
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+
+% ``for (x in y ... z)''
+\newcommand{\ForRange}[3]{\For{#1 \textbf{in} #2 \ \ldots \ #3}}
+
+% these are common math formatting commands that aren't defined by default
+\newcommand{\union}{\cup}
+\newcommand{\isect}{\cap}
+\newcommand{\ceil}[1]{\ensuremath \left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\ensuremath \left\lfloor #1 \right\rfloor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% text goes here!
+
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\end{document}
